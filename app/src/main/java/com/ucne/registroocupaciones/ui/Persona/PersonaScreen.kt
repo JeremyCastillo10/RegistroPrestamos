@@ -2,6 +2,7 @@ package com.ucne.registroocupaciones.ui.Persona
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.ContentAlpha
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -13,8 +14,12 @@ import com.ucne.registroocupaciones.model.Persona
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.material.DropdownMenuItem
+import androidx.compose.material.MaterialTheme.colors
+import androidx.compose.material.MaterialTheme.typography
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.ucne.registroocupaciones.model.Ocupation
@@ -30,6 +35,16 @@ import com.ucne.registroocupaciones.ui.Persona.PersonaViewModel
 fun PersonaScreen(
     onNavigateBack: () -> Unit, viewModel: PersonaViewModel = hiltViewModel()
 ) {
+
+    var nameError by remember { mutableStateOf(false) }
+
+    val assistiveElementText = if (nameError) "Error: Obligatorio" else "*Obligatorio" // 4
+    val assistiveElementColor = if (nameError) { // 5
+        colors.error
+    } else {
+        colors.onSurface.copy(alpha = ContentAlpha.medium)
+    }
+
     var ocupacionselected by remember { mutableStateOf("") }
     var expanded by remember { mutableStateOf(false) }
     val ocupaciones = listOf(
@@ -48,8 +63,22 @@ fun PersonaScreen(
             }, ) {
                 Button(
                     onClick = {
-                        viewModel.Save()
-                        onNavigateBack()
+                     if(viewModel.nombres.length <= 0 || viewModel.telefono.length <= 0 || viewModel.celular.length <= 0
+                         || viewModel.direccion.length <= 0 || viewModel.email.length <= 0 || viewModel.fechanacimiento.length <= 0)
+                     {
+                         nameError = viewModel.nombres.isBlank()
+                         nameError = viewModel.telefono.isBlank()
+                         nameError = viewModel.direccion.isBlank()
+                         nameError = viewModel.celular.isBlank()
+                         nameError = viewModel.email.isBlank()
+                         nameError = viewModel.fechanacimiento.isBlank()
+                         nameError = viewModel.ocupacionid.isBlank()
+                     }// 7
+                        else{
+                         viewModel.Save()
+                         onNavigateBack()
+                        }
+
 
                     },
                     // Uses ButtonDefaults.ContentPadding by default
@@ -87,35 +116,91 @@ fun PersonaScreen(
                 value = viewModel.nombres,
                 onValueChange = {viewModel.nombres = it})
 
+                if(viewModel.nombres.length <= 0)
+                {
+                    Text(// 6
+                        text = assistiveElementText,
+                        color = assistiveElementColor,
+                        style = typography.caption,
+                        modifier = Modifier.padding(start = 16.dp)
+                    )
+                }
+
+
             OutlinedTextField(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Telefono") },
                 value = viewModel.telefono,
                 onValueChange = {viewModel.telefono = it})
+            if(viewModel.telefono.length <= 0)
+            {
+                Text(// 6
+                    text = assistiveElementText,
+                    color = assistiveElementColor,
+                    style = typography.caption,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
+            }
 
             OutlinedTextField(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Celular") },
                 value = viewModel.celular,
                 onValueChange = {viewModel.celular = it})
+            if(viewModel.celular.length <= 0)
+            {
+                Text(// 6
+                    text = assistiveElementText,
+                    color = assistiveElementColor,
+                    style = typography.caption,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
+            }
 
             OutlinedTextField(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Email") },
                 value = viewModel.email,
                 onValueChange = {viewModel.email = it})
+            if(viewModel.email.length <= 0)
+            {
+                Text(// 6
+                    text = assistiveElementText,
+                    color = assistiveElementColor,
+                    style = typography.caption,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
+            }
 
             OutlinedTextField(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Direccion") },
                 value = viewModel.direccion,
                 onValueChange = {viewModel.direccion = it})
+            if(viewModel.direccion.length <= 0)
+            {
+                Text(// 6
+                    text = assistiveElementText,
+                    color = assistiveElementColor,
+                    style = typography.caption,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
+            }
 
             OutlinedTextField(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Fecha de Nacimiento") },
                 value = viewModel.fechanacimiento,
                 onValueChange = {viewModel.fechanacimiento = it})
+            if(viewModel.fechanacimiento.length <= 0)
+            {
+                Text(// 6
+                    text = assistiveElementText,
+                    color = assistiveElementColor,
+                    style = typography.caption,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
+            }
 
 
 
@@ -145,6 +230,15 @@ fun PersonaScreen(
                     }
 
                 }
+            }
+            if(viewModel.ocupacionid.length <= 0)
+            {
+                Text(// 6
+                    text = assistiveElementText,
+                    color = assistiveElementColor,
+                    style = typography.caption,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
             }
 
         }
