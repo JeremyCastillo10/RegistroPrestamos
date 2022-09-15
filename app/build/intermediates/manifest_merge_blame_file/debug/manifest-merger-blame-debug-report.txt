@@ -6,54 +6,54 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml
+8-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml
+9-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:6:5-28:19
+11-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:6:5-28:19
 12        android:name="com.ucne.registroocupaciones.PersonaApp"
-12-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:7:9-35
+12-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:7:9-35
 13        android:allowBackup="true"
-13-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:8:9-35
+13-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:8:9-35
 14        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 14-->[androidx.core:core:1.8.0] C:\Users\Jey\.gradle\caches\transforms-3\f4c39bbb69d80e8cc4fcd85f053469f6\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 15        android:dataExtractionRules="@xml/data_extraction_rules"
-15-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:9:9-65
+15-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:9:9-65
 16        android:debuggable="true"
 17        android:extractNativeLibs="false"
 18        android:fullBackupContent="@xml/backup_rules"
-18-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:10:9-54
+18-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:10:9-54
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:11:9-43
+19-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:11:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:12:9-41
+20-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:12:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:13:9-54
+21-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:13:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:14:9-35
+22-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:14:9-35
 23        android:testOnly="true"
 24        android:theme="@style/Theme.RegistroOcupaciones" >
-24-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:15:9-57
+24-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:15:9-57
 25        <activity
-25-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:17:9-27:20
+25-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:17:9-27:20
 26            android:name="com.ucne.registroocupaciones.MainActivity"
-26-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:18:13-41
+26-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:18:13-41
 27            android:exported="true"
-27-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:19:13-36
+27-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:19:13-36
 28            android:label="@string/app_name"
-28-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:20:13-45
+28-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:20:13-45
 29            android:theme="@style/Theme.RegistroOcupaciones" >
-29-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:21:13-61
+29-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:21:13-61
 30            <intent-filter>
-30-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:22:13-26:29
+30-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:22:13-26:29
 31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:23:17-69
-31-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:23:25-66
+31-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:23:17-69
+31-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:23:25-66
 32
 33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:25:17-77
-33-->C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:25:27-74
+33-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:25:17-77
+33-->C:\Users\Jey\Music\RegistroPrestamos\app\src\main\AndroidManifest.xml:25:27-74
 34            </intent-filter>
 35        </activity>
 36        <activity

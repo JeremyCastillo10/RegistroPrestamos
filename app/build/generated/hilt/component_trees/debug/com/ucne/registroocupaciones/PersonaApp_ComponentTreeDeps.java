@@ -17,9 +17,9 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_andro
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewModelComponentBuilder;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewWithFragmentComponentBuilder;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent;
+import hilt_aggregated_deps._com_sagrd_restudiantes_di_AppModule;
 import hilt_aggregated_deps._com_ucne_registroocupaciones_MainActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_ucne_registroocupaciones_PersonaApp_GeneratedInjector;
-import hilt_aggregated_deps._com_ucne_registroocupaciones_di_AppModule;
 import hilt_aggregated_deps._com_ucne_registroocupaciones_di_AppModulePersona;
 import hilt_aggregated_deps._com_ucne_registroocupaciones_ui_OcupacionList_OcupacionListViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_ucne_registroocupaciones_ui_OcupacionList_OcupacionListViewModel_HiltModules_KeyModule;
@@ -68,9 +68,9 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_components_SingletonComponent.class
     },
     aggregatedDeps = {
+        _com_sagrd_restudiantes_di_AppModule.class,
         _com_ucne_registroocupaciones_MainActivity_GeneratedInjector.class,
         _com_ucne_registroocupaciones_PersonaApp_GeneratedInjector.class,
-        _com_ucne_registroocupaciones_di_AppModule.class,
         _com_ucne_registroocupaciones_di_AppModulePersona.class,
         _com_ucne_registroocupaciones_ui_OcupacionList_OcupacionListViewModel_HiltModules_BindsModule.class,
         _com_ucne_registroocupaciones_ui_OcupacionList_OcupacionListViewModel_HiltModules_KeyModule.class,

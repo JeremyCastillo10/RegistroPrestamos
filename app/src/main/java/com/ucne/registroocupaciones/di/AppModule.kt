@@ -1,4 +1,4 @@
-package com.ucne.registroocupaciones.di
+package com.sagrd.restudiantes.di
 
 import android.content.Context
 import androidx.room.Room

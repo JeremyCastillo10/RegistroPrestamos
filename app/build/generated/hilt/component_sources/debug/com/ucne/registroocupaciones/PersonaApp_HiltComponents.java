@@ -1,6 +1,6 @@
 package com.ucne.registroocupaciones;
 
-import com.ucne.registroocupaciones.di.AppModule;
+import com.sagrd.restudiantes.di.AppModule;
 import com.ucne.registroocupaciones.di.AppModulePersona;
 import com.ucne.registroocupaciones.ui.OcupacionList.OcupacionListViewModel_HiltModules;
 import com.ucne.registroocupaciones.ui.Persona.PersonaViewModel_HiltModules;
