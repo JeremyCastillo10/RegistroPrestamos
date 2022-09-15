@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ucne.registroocupaciones.app-mergeDebugResources-53:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Jey\\.gradle\\caches\\transforms-3\\e4f3b2cff7c338221d54698f34d2cf0a\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
