@@ -23,6 +23,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ucne.registroocupaciones.ui.OcupacionList.OcupacionListScreen
+import com.ucne.registroocupaciones.ui.Persona.PersonaScreen
+import com.ucne.registroocupaciones.ui.PersonaList.PersonaListScreen
 import com.ucne.registroocupaciones.ui.ocupacion.OcupacionScreen
 import com.ucne.registroocupaciones.ui.theme.RegistroOcupacionesTheme
 import com.ucne.registroocupaciones.util.Screen
@@ -45,16 +47,16 @@ class MainActivity : ComponentActivity() {
 
                     NavHost(
                         navController = navController,
-                        startDestination = Screen.OcupacionListScreen.route
+                        startDestination = Screen.PersonaListScreen.route
                     ) {
-                        composable(Screen.OcupacionListScreen.route) {
-                            OcupacionListScreen(
+                        composable(Screen.PersonaListScreen.route) {
+                            PersonaListScreen(
 
-                                onClick = { navController.navigate(Screen.OcupacionScreen.route) }
+                                onClick = { navController.navigate(Screen.PersonaScreen.route) }
                             )
                         }
-                        composable(Screen.OcupacionScreen.route) {
-                            OcupacionScreen({ navController.navigateUp() })
+                        composable(Screen.PersonaScreen.route) {
+                            PersonaScreen({ navController.navigateUp() })
                         }
                     }
 
