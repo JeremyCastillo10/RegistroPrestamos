@@ -99,7 +99,7 @@ fun PrestamosScreen(
                    label = { Text(text = "Prestamo ID") },
                    value = viewModel.prestamoid,
                    onValueChange = { viewModel.prestamoid = it },
-                   readOnly = true
+
 
                )
                Icon(
