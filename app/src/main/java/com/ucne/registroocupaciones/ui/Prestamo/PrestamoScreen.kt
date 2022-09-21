@@ -93,6 +93,29 @@ fun PrestamosScreen(
                .padding()
                .padding(8.dp)
        ) {
+           Row() {
+               OutlinedTextField(
+                   modifier = Modifier.width(320.dp),
+                   label = { Text(text = "Prestamo ID") },
+                   value = viewModel.prestamoid,
+                   onValueChange = { viewModel.prestamoid = it },
+                   readOnly = true
+
+               )
+               Icon(
+                   Icons.Filled.Search,
+                   contentDescription = "Fecha",
+                   modifier = Modifier.fillMaxWidth()
+                       .height(50.dp)
+
+
+                       .clickable {
+
+                       }
+
+               )
+
+           }
            OutlinedTextField(
                modifier = Modifier.fillMaxWidth(),
                label = { Text(text = "Fecha") },
@@ -235,8 +258,9 @@ fun PrestamosScreen(
 
            Row(
 
-               modifier = Modifier.align(Alignment.CenterHorizontally)
-                   .padding(35.dp)
+               modifier = Modifier
+                   .align(Alignment.CenterHorizontally)
+                   .padding(10.dp)
 
 
            )
@@ -274,15 +298,20 @@ fun PrestamosScreen(
 
                Button(
                    onClick = {
-                       viewModel.Update()
+                       viewModel.fecha = ""
+                       viewModel.vence = ""
+                       viewModel.concepto=""
+                       viewModel.balance = ""
+                       viewModel.monto = ""
+                       viewModel.personaid= ""
                    },
                    Modifier
                        .size(90.dp)
                        .padding(8.dp)
                ) {
                    Icon(
-                       Icons.Filled.Edit,
-                       contentDescription = "Modificar",
+                       Icons.Filled.Clear,
+                       contentDescription = "Nuevo",
                        )
                }
                Button(

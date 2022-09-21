@@ -4,6 +4,25 @@
             "outputFile": "com.ucne.registroocupaciones.app-mergeDebugResources-53:/values/values.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Jey\\Documents\\GitHub\\RegistroPrestamos\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "228"
+                    },
+                    "to": {
+                        "startLines": "139",
+                        "startColumns": "4",
+                        "startOffsets": "8329",
+                        "endLines": "141",
+                        "endColumns": "12",
+                        "endOffsets": "8501"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Jey\\.gradle\\caches\\transforms-3\\319dc67559a249944f50fed317ec935e\\transformed\\navigation-runtime-2.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,10,13",
@@ -20,23 +39,6 @@
                         "endLines": "80,150,299,302",
                         "endColumns": "52,24,24,24",
                         "endOffsets": "4928,8944,14406,14521"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Jey\\Desktop\\RegistroPrestamos-Prestamos\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "56",
-                        "endOffsets": "68"
-                    },
-                    "to": {
-                        "startLines": "107",
-                        "startColumns": "4",
-                        "startOffsets": "6401",
-                        "endColumns": "56",
-                        "endOffsets": "6453"
                     }
                 },
                 {
@@ -91,22 +93,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jey\\Desktop\\RegistroPrestamos-Prestamos\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\Jey\\Documents\\GitHub\\RegistroPrestamos\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "228"
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "286,55,102,149,196,241,328",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "323,97,144,191,236,281,365"
                     },
                     "to": {
-                        "startLines": "139",
-                        "startColumns": "4",
-                        "startOffsets": "8329",
-                        "endLines": "141",
-                        "endColumns": "12",
-                        "endOffsets": "8501"
+                        "startLines": "5,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "370,544,591,638,685,730,775",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "407,586,633,680,725,770,812"
                     }
                 },
                 {
@@ -146,20 +146,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Jey\\Desktop\\RegistroPrestamos-Prestamos\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\Jey\\Documents\\GitHub\\RegistroPrestamos\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "286,55,102,149,196,241,328",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "323,97,144,191,236,281,365"
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "56",
+                        "endOffsets": "68"
                     },
                     "to": {
-                        "startLines": "5,8,9,10,11,12,13",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "370,544,591,638,685,730,775",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "407,586,633,680,725,770,812"
+                        "startLines": "107",
+                        "startColumns": "4",
+                        "startOffsets": "6401",
+                        "endColumns": "56",
+                        "endOffsets": "6453"
                     }
                 },
                 {

@@ -48,10 +48,10 @@ com.ucne.registroocupaciones.app-lifecycle-viewmodel-savedstate-2.5.0-46 C:\User
 com.ucne.registroocupaciones.app-savedstate-ktx-1.2.0-47 C:\Users\Jey\.gradle\caches\transforms-3\eba71cbb5598be3291650cbc678d5488\transformed\savedstate-ktx-1.2.0\res
 com.ucne.registroocupaciones.app-ui-graphics-1.2.0-rc01-48 C:\Users\Jey\.gradle\caches\transforms-3\f4d2897f09b37c3a846171a52ea86328\transformed\ui-graphics-1.2.0-rc01\res
 com.ucne.registroocupaciones.app-ui-unit-1.2.0-rc01-49 C:\Users\Jey\.gradle\caches\transforms-3\fd7ff31371a96b8a1ffc806a03e55d95\transformed\ui-unit-1.2.0-rc01\res
-com.ucne.registroocupaciones.app-resValues-50 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\build\generated\res\resValues\debug
-com.ucne.registroocupaciones.app-rs-51 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\build\generated\res\rs\debug
-com.ucne.registroocupaciones.app-packageDebugResources-52 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.ucne.registroocupaciones.app-packageDebugResources-53 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.ucne.registroocupaciones.app-merged_res-54 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\build\intermediates\merged_res\debug
-com.ucne.registroocupaciones.app-debug-55 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\src\debug\res
-com.ucne.registroocupaciones.app-main-56 C:\Users\Jey\Desktop\RegistroPrestamos-Prestamos\app\src\main\res
+com.ucne.registroocupaciones.app-resValues-50 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\build\generated\res\resValues\debug
+com.ucne.registroocupaciones.app-rs-51 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\build\generated\res\rs\debug
+com.ucne.registroocupaciones.app-packageDebugResources-52 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.ucne.registroocupaciones.app-packageDebugResources-53 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.ucne.registroocupaciones.app-merged_res-54 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\build\intermediates\merged_res\debug
+com.ucne.registroocupaciones.app-debug-55 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\debug\res
+com.ucne.registroocupaciones.app-main-56 C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\res

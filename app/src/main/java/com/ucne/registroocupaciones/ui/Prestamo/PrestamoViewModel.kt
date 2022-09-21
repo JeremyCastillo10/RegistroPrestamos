@@ -15,7 +15,7 @@ import javax.inject.Inject
 class PrestamoViewModel @Inject constructor(
     val repository: PrestamoRepository
 ): ViewModel() {
-
+    var prestamoid by mutableStateOf("")
     var fecha by mutableStateOf("")
     var vence by mutableStateOf("")
     var personaid by mutableStateOf("")
@@ -27,6 +27,7 @@ class PrestamoViewModel @Inject constructor(
         viewModelScope.launch {
             repository.InsertPrestamo(
                 Prestamo(
+                    prestamoid =prestamoid.toInt(),
                     fecha = fecha,
                     vence = vence,
                     personaid = personaid,

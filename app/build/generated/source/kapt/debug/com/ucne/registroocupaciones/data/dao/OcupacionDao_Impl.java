@@ -86,7 +86,8 @@ public final class OcupacionDao_Impl implements OcupacionDao {
   }
 
   @Override
-  public Object insertOcupacion(final Ocupation ocupation, final Continuation<? super Unit> arg1) {
+  public Object insertOcupacion(final Ocupation ocupation,
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -99,11 +100,12 @@ public final class OcupacionDao_Impl implements OcupacionDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
-  public Object deleteOcupacion(final Ocupation ocupation, final Continuation<? super Unit> arg1) {
+  public Object deleteOcupacion(final Ocupation ocupation,
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -116,11 +118,12 @@ public final class OcupacionDao_Impl implements OcupacionDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
-  public Object updateOcupacion(final Ocupation ocupation, final Continuation<? super Unit> arg1) {
+  public Object updateOcupacion(final Ocupation ocupation,
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -133,11 +136,11 @@ public final class OcupacionDao_Impl implements OcupacionDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
-  public Object find(final int ocupacionid, final Continuation<? super Ocupation> arg1) {
+  public Object find(final int ocupacionid, final Continuation<? super Ocupation> continuation) {
     final String _sql = "SELECT * FROM Ocupaciones WHERE ocupacionid = ? LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -173,7 +176,7 @@ public final class OcupacionDao_Impl implements OcupacionDao {
           _statement.release();
         }
       }
-    }, arg1);
+    }, continuation);
   }
 
   @Override
