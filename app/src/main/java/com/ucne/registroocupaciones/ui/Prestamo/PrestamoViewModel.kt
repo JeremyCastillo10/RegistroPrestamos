@@ -29,7 +29,7 @@ class PrestamoViewModel @Inject constructor(
                 Prestamo(
                     fecha = fecha,
                     vence = vence,
-                    personaid = personaid.toInt(),
+                    personaid = personaid,
                     concepto = concepto,
                     monto = monto.toDouble(),
                     balance = balance.toDouble()
@@ -44,7 +44,7 @@ class PrestamoViewModel @Inject constructor(
                 Prestamo(
                     fecha = fecha,
                     vence = vence,
-                    personaid = personaid.toInt(),
+                    personaid = personaid,
                     concepto = concepto,
                     monto = monto.toDouble(),
                     balance = balance.toDouble()
@@ -60,7 +60,7 @@ class PrestamoViewModel @Inject constructor(
                 Prestamo(
                     fecha = fecha,
                     vence = vence,
-                    personaid = personaid.toInt(),
+                    personaid = personaid,
                     concepto = concepto,
                     monto = monto.toDouble(),
                     balance = balance.toDouble()

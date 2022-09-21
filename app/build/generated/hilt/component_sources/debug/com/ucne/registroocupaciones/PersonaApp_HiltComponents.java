@@ -5,6 +5,7 @@ import com.ucne.registroocupaciones.ui.OcupacionList.OcupacionListViewModel_Hilt
 import com.ucne.registroocupaciones.ui.Persona.PersonaViewModel_HiltModules;
 import com.ucne.registroocupaciones.ui.PersonaList.PersonaListViewModel_HiltModules;
 import com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel_HiltModules;
+import com.ucne.registroocupaciones.ui.PrestamoList.PrestamoListViewModel_HiltModules;
 import com.ucne.registroocupaciones.ui.ocupation.OcupationViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -154,6 +155,7 @@ public final class PersonaApp_HiltComponents {
           ViewModelCBuilderModule.class,
           PersonaListViewModel_HiltModules.KeyModule.class,
           PersonaViewModel_HiltModules.KeyModule.class,
+          PrestamoListViewModel_HiltModules.KeyModule.class,
           PrestamoViewModel_HiltModules.KeyModule.class
       }
   )
@@ -195,6 +197,7 @@ public final class PersonaApp_HiltComponents {
           OcupationViewModel_HiltModules.BindsModule.class,
           PersonaListViewModel_HiltModules.BindsModule.class,
           PersonaViewModel_HiltModules.BindsModule.class,
+          PrestamoListViewModel_HiltModules.BindsModule.class,
           PrestamoViewModel_HiltModules.BindsModule.class
       }
   )

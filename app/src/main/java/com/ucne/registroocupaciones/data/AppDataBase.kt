@@ -39,7 +39,7 @@ data class Prestamo(
     val prestamoid: Int = 0,
     val fecha: String = "",
     val vence: String = "",
-    val personaid: Int = 0,
+    val personaid: String = "",
     val concepto: String = "",
     val monto: Double = 0.00,
     val balance: Double = 0.00,

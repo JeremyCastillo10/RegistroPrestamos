@@ -26,6 +26,7 @@ import com.ucne.registroocupaciones.ui.OcupacionList.OcupacionListScreen
 import com.ucne.registroocupaciones.ui.Persona.PersonaScreen
 import com.ucne.registroocupaciones.ui.PersonaList.PersonaListScreen
 import com.ucne.registroocupaciones.ui.Prestamo.PrestamosScreen
+import com.ucne.registroocupaciones.ui.PrestamoList.PrestamoListScreen
 import com.ucne.registroocupaciones.ui.ocupacion.OcupacionScreen
 import com.ucne.registroocupaciones.ui.theme.RegistroOcupacionesTheme
 import com.ucne.registroocupaciones.util.Screen
@@ -56,7 +57,8 @@ class MainActivity : ComponentActivity() {
                                 onClick1 = { navController.navigate(Screen.OcupacionListScreen.route) },
                                 onClick2 = { navController.navigate(Screen.PersonaScreen.route) },
                                 onClick3 = { navController.navigate(Screen.PersonaListScreen.route) },
-                                onClick4 = { navController.navigate(Screen.PrestamoScreen.route) }
+                                onClick4 = { navController.navigate(Screen.PrestamoScreen.route) },
+                                onClick5 = { navController.navigate(Screen.PrestamoListScreen.route) }
                             )
                         }
                         composable(Screen.OcupacionScreen.route) {
@@ -77,6 +79,11 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(Screen.PersonaScreen.route) {
                             PersonaScreen({ navController.navigateUp() })
+                        }
+                        composable(Screen.PrestamoListScreen.route) {
+                            PrestamoListScreen(
+                                onClick = { navController.navigate(Screen.PrestamoScreen.route) }
+                            )
                         }
                     }
 

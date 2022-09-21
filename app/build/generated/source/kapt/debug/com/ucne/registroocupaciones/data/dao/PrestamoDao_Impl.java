@@ -56,7 +56,11 @@ public final class PrestamoDao_Impl implements PrestamoDao {
         } else {
           stmt.bindString(3, value.getVence());
         }
-        stmt.bindLong(4, value.getPersonaid());
+        if (value.getPersonaid() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getPersonaid());
+        }
         if (value.getConcepto() == null) {
           stmt.bindNull(5);
         } else {
@@ -96,7 +100,11 @@ public final class PrestamoDao_Impl implements PrestamoDao {
         } else {
           stmt.bindString(3, value.getVence());
         }
-        stmt.bindLong(4, value.getPersonaid());
+        if (value.getPersonaid() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getPersonaid());
+        }
         if (value.getConcepto() == null) {
           stmt.bindNull(5);
         } else {
@@ -198,8 +206,12 @@ public final class PrestamoDao_Impl implements PrestamoDao {
             } else {
               _tmpVence = _cursor.getString(_cursorIndexOfVence);
             }
-            final int _tmpPersonaid;
-            _tmpPersonaid = _cursor.getInt(_cursorIndexOfPersonaid);
+            final String _tmpPersonaid;
+            if (_cursor.isNull(_cursorIndexOfPersonaid)) {
+              _tmpPersonaid = null;
+            } else {
+              _tmpPersonaid = _cursor.getString(_cursorIndexOfPersonaid);
+            }
             final String _tmpConcepto;
             if (_cursor.isNull(_cursorIndexOfConcepto)) {
               _tmpConcepto = null;
@@ -256,8 +268,12 @@ public final class PrestamoDao_Impl implements PrestamoDao {
             } else {
               _tmpVence = _cursor.getString(_cursorIndexOfVence);
             }
-            final int _tmpPersonaid;
-            _tmpPersonaid = _cursor.getInt(_cursorIndexOfPersonaid);
+            final String _tmpPersonaid;
+            if (_cursor.isNull(_cursorIndexOfPersonaid)) {
+              _tmpPersonaid = null;
+            } else {
+              _tmpPersonaid = _cursor.getString(_cursorIndexOfPersonaid);
+            }
             final String _tmpConcepto;
             if (_cursor.isNull(_cursorIndexOfConcepto)) {
               _tmpConcepto = null;

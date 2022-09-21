@@ -49,9 +49,9 @@ public final class AppDataBase_Impl extends AppDataBase {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Ocupaciones` (`ocupacionid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `descripcion` TEXT NOT NULL, `salario` REAL NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Personas` (`personaid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `telefono` TEXT NOT NULL, `celular` TEXT NOT NULL, `email` TEXT NOT NULL, `direccion` TEXT NOT NULL, `fechanacimiento` TEXT NOT NULL, `nombres` TEXT NOT NULL, `ocupacionid` TEXT NOT NULL)");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Prestamos` (`prestamoid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fecha` TEXT NOT NULL, `vence` TEXT NOT NULL, `personaid` INTEGER NOT NULL, `concepto` TEXT NOT NULL, `monto` REAL NOT NULL, `balance` REAL NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Prestamos` (`prestamoid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fecha` TEXT NOT NULL, `vence` TEXT NOT NULL, `personaid` TEXT NOT NULL, `concepto` TEXT NOT NULL, `monto` REAL NOT NULL, `balance` REAL NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ec81864a2c5d8ba59192d42681735391')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fad3cb16373b1414845e4dff836efdbc')");
       }
 
       @Override
@@ -132,7 +132,7 @@ public final class AppDataBase_Impl extends AppDataBase {
         _columnsPrestamos.put("prestamoid", new TableInfo.Column("prestamoid", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPrestamos.put("fecha", new TableInfo.Column("fecha", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPrestamos.put("vence", new TableInfo.Column("vence", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsPrestamos.put("personaid", new TableInfo.Column("personaid", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsPrestamos.put("personaid", new TableInfo.Column("personaid", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPrestamos.put("concepto", new TableInfo.Column("concepto", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPrestamos.put("monto", new TableInfo.Column("monto", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsPrestamos.put("balance", new TableInfo.Column("balance", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -147,7 +147,7 @@ public final class AppDataBase_Impl extends AppDataBase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "ec81864a2c5d8ba59192d42681735391", "98a0e7ee1a6d26622fb9b8789b56b33d");
+    }, "fad3cb16373b1414845e4dff836efdbc", "39b5fe4b600b7682da47e81f02fb482d");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

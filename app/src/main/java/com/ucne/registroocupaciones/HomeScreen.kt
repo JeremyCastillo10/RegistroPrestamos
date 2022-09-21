@@ -11,6 +11,7 @@ fun MainScreen(onClick: () -> Unit,
                onClick2: () -> Unit,
                onClick3: () -> Unit,
                onClick4: () -> Unit,
+               onClick5: () -> Unit
 
 
                )
@@ -34,6 +35,10 @@ fun MainScreen(onClick: () -> Unit,
         }
         Button(onClick = onClick4) {
             Text(text = "RegistroPrestamo")
+
+        }
+        Button(onClick = onClick5) {
+            Text(text = "ListaPrestamos")
 
         }
 

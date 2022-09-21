@@ -144,8 +144,7 @@ public final class PersonaDao_Impl implements PersonaDao {
   }
 
   @Override
-  public Object insertPersonas(final Persona persona,
-      final Continuation<? super Unit> continuation) {
+  public Object insertPersonas(final Persona persona, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -158,12 +157,11 @@ public final class PersonaDao_Impl implements PersonaDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object deletePersonas(final Persona persona,
-      final Continuation<? super Unit> continuation) {
+  public Object deletePersonas(final Persona persona, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -176,12 +174,11 @@ public final class PersonaDao_Impl implements PersonaDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object updatePersonas(final Persona persona,
-      final Continuation<? super Unit> continuation) {
+  public Object updatePersonas(final Persona persona, final Continuation<? super Unit> arg1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -194,11 +191,11 @@ public final class PersonaDao_Impl implements PersonaDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override
-  public Object find(final int personaid, final Continuation<? super Persona> continuation) {
+  public Object find(final int personaid, final Continuation<? super Persona> arg1) {
     final String _sql = "SELECT * FROM Personas WHERE personaid = ? LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -273,7 +270,7 @@ public final class PersonaDao_Impl implements PersonaDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, arg1);
   }
 
   @Override

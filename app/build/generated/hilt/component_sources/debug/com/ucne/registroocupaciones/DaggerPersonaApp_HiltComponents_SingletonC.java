@@ -21,6 +21,8 @@ import com.ucne.registroocupaciones.ui.PersonaList.PersonaListViewModel;
 import com.ucne.registroocupaciones.ui.PersonaList.PersonaListViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel;
 import com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.ucne.registroocupaciones.ui.PrestamoList.PrestamoListViewModel;
+import com.ucne.registroocupaciones.ui.PrestamoList.PrestamoListViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.ucne.registroocupaciones.ui.ocupation.OcupationViewModel;
 import com.ucne.registroocupaciones.ui.ocupation.OcupationViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -373,7 +375,7 @@ public final class DaggerPersonaApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return SetBuilder.<String>newSetBuilder(5).add(OcupacionListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OcupationViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PersonaListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PersonaViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PrestamoViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
+      return SetBuilder.<String>newSetBuilder(6).add(OcupacionListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(OcupationViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PersonaListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PersonaViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PrestamoListViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(PrestamoViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -407,6 +409,8 @@ public final class DaggerPersonaApp_HiltComponents_SingletonC {
 
     private Provider<PersonaViewModel> personaViewModelProvider;
 
+    private Provider<PrestamoListViewModel> prestamoListViewModelProvider;
+
     private Provider<PrestamoViewModel> prestamoViewModelProvider;
 
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
@@ -436,12 +440,13 @@ public final class DaggerPersonaApp_HiltComponents_SingletonC {
       this.ocupationViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
       this.personaListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.personaViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
-      this.prestamoViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.prestamoListViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.prestamoViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(5).put("com.ucne.registroocupaciones.ui.OcupacionList.OcupacionListViewModel", ((Provider) ocupacionListViewModelProvider)).put("com.ucne.registroocupaciones.ui.ocupation.OcupationViewModel", ((Provider) ocupationViewModelProvider)).put("com.ucne.registroocupaciones.ui.PersonaList.PersonaListViewModel", ((Provider) personaListViewModelProvider)).put("com.ucne.registroocupaciones.ui.Persona.PersonaViewModel", ((Provider) personaViewModelProvider)).put("com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel", ((Provider) prestamoViewModelProvider)).build();
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(6).put("com.ucne.registroocupaciones.ui.OcupacionList.OcupacionListViewModel", ((Provider) ocupacionListViewModelProvider)).put("com.ucne.registroocupaciones.ui.ocupation.OcupationViewModel", ((Provider) ocupationViewModelProvider)).put("com.ucne.registroocupaciones.ui.PersonaList.PersonaListViewModel", ((Provider) personaListViewModelProvider)).put("com.ucne.registroocupaciones.ui.Persona.PersonaViewModel", ((Provider) personaViewModelProvider)).put("com.ucne.registroocupaciones.ui.PrestamoList.PrestamoListViewModel", ((Provider) prestamoListViewModelProvider)).put("com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel", ((Provider) prestamoViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -477,7 +482,10 @@ public final class DaggerPersonaApp_HiltComponents_SingletonC {
           case 3: // com.ucne.registroocupaciones.ui.Persona.PersonaViewModel 
           return (T) new PersonaViewModel(viewModelCImpl.personaRepository());
 
-          case 4: // com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel 
+          case 4: // com.ucne.registroocupaciones.ui.PrestamoList.PrestamoListViewModel 
+          return (T) new PrestamoListViewModel(viewModelCImpl.prestamoRepository());
+
+          case 5: // com.ucne.registroocupaciones.ui.Prestamo.PrestamoViewModel 
           return (T) new PrestamoViewModel(viewModelCImpl.prestamoRepository());
 
           default: throw new AssertionError(id);
