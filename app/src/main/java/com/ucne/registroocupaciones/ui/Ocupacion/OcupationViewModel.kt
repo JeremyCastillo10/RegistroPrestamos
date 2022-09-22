@@ -32,4 +32,5 @@ class OcupationViewModel @Inject constructor(
             )
         }
     }
+
 }

@@ -27,7 +27,7 @@ class PrestamoViewModel @Inject constructor(
         viewModelScope.launch {
             repository.InsertPrestamo(
                 Prestamo(
-                    prestamoid =prestamoid.toInt(),
+
                     fecha = fecha,
                     vence = vence,
                     personaid = personaid,

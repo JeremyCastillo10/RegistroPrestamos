@@ -93,29 +93,7 @@ fun PrestamosScreen(
                .padding()
                .padding(8.dp)
        ) {
-           Row() {
-               OutlinedTextField(
-                   modifier = Modifier.width(320.dp),
-                   label = { Text(text = "Prestamo ID") },
-                   value = viewModel.prestamoid,
-                   onValueChange = { viewModel.prestamoid = it },
 
-
-               )
-               Icon(
-                   Icons.Filled.Search,
-                   contentDescription = "Fecha",
-                   modifier = Modifier.fillMaxWidth()
-                       .height(50.dp)
-
-
-                       .clickable {
-
-                       }
-
-               )
-
-           }
            OutlinedTextField(
                modifier = Modifier.fillMaxWidth(),
                label = { Text(text = "Fecha") },
@@ -278,8 +256,10 @@ fun PrestamosScreen(
                            nameError = viewModel.personaid.isBlank()
                        }// 7
                        else{
-                           viewModel.Save()
-                           onNavigateBack()
+
+                               viewModel.Save()
+                               onNavigateBack()
+
                        }
                    },
                    Modifier
