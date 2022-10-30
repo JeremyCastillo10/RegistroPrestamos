@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.ucne.registroocupaciones.model.Ocupation
 import com.ucne.registroocupaciones.repository.OcupacionRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -34,6 +35,11 @@ class OcupacionListViewModel @Inject constructor(
                     it.copy( ocupacion = list )
                 }
             }
+        }
+    }
+    fun Delete(ocupation: Ocupation) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deleteOcupacion(ocupation)
         }
     }
 }

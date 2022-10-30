@@ -276,37 +276,6 @@ fun PrestamosScreen(
 
                }
 
-               Button(
-                   onClick = {
-                       viewModel.fecha = ""
-                       viewModel.vence = ""
-                       viewModel.concepto=""
-                       viewModel.balance = ""
-                       viewModel.monto = ""
-                       viewModel.personaid= ""
-                   },
-                   Modifier
-                       .size(90.dp)
-                       .padding(8.dp)
-               ) {
-                   Icon(
-                       Icons.Filled.Clear,
-                       contentDescription = "Nuevo",
-                       )
-               }
-               Button(
-                   onClick = {
-                       viewModel.Delete()
-                   },
-                   Modifier
-                       .size(90.dp)
-                       .padding(8.dp)
-               ) {
-                   Icon(
-                       Icons.Filled.Delete,
-                       contentDescription = "Eliminar",
-                       )
-               }
            }
 
        }

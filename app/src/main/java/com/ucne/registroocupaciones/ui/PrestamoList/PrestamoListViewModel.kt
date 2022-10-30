@@ -4,9 +4,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ucne.registroocupaciones.data.Persona
 import com.ucne.registroocupaciones.data.Prestamo
+import com.ucne.registroocupaciones.model.Ocupation
 import com.ucne.registroocupaciones.repository.PersonaRepository
 import com.ucne.registroocupaciones.repository.PrestamoRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -34,6 +36,11 @@ class PrestamoListViewModel @Inject constructor(
                     it.copy( prestamo = list )
                 }
             }
+        }
+    }
+    fun Delete(prestamo: Prestamo) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.DeletePrestamo(prestamo)
         }
     }
 }

@@ -4,8 +4,10 @@ package com.ucne.registroocupaciones.ui.PersonaList
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ucne.registroocupaciones.data.Persona
+import com.ucne.registroocupaciones.model.Ocupation
 import com.ucne.registroocupaciones.repository.PersonaRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -33,6 +35,11 @@ class PersonaListViewModel @Inject constructor(
                     it.copy( persona = list )
                 }
             }
+        }
+    }
+    fun Delete(persona: Persona) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deletePersonas(persona)
         }
     }
 }
