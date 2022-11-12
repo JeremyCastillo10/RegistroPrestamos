@@ -2,6 +2,7 @@ package com.ucne.registroocupaciones.ui.Persona
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.ContentAlpha
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -17,6 +18,7 @@ import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.material.MaterialTheme.typography
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Done
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.ucne.registroocupaciones.model.Ocupation
 
@@ -125,7 +127,8 @@ fun PersonaScreen(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Telefono") },
                 value = viewModel.telefono,
-                onValueChange = {viewModel.telefono = it})
+                onValueChange = {viewModel.telefono = it},
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),)
             if(viewModel.telefono.length <= 0)
             {
                 Text(// 6
@@ -140,7 +143,8 @@ fun PersonaScreen(
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(text = "Celular") },
                 value = viewModel.celular,
-                onValueChange = {viewModel.celular = it})
+                onValueChange = {viewModel.celular = it},
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),)
             if(viewModel.celular.length <= 0)
             {
                 Text(// 6

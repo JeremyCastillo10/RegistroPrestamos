@@ -4,6 +4,7 @@ import android.app.DatePickerDialog
 import android.widget.DatePicker
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.ContentAlpha
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.icons.Icons
@@ -13,6 +14,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -169,6 +171,7 @@ fun PrestamosScreen(
                label = { Text(text = "Monto") },
                value = viewModel.monto,
                onValueChange = { viewModel.monto = it },
+               keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
            )
            if(viewModel.monto.length <= 0)
            {
@@ -184,6 +187,7 @@ fun PrestamosScreen(
                label = { Text(text = "Balance") },
                value = viewModel.balance,
                onValueChange = { viewModel.balance = it },
+               keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
            )
            if(viewModel.balance.length <= 0)
            {
