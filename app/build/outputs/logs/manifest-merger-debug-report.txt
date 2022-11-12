@@ -4,6 +4,7 @@ ADDED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidM
 INJECTED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:2:1-30:12
 INJECTED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:2:1-30:12
 INJECTED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml:2:1-30:12
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.16.0] C:\Users\Jey\.gradle\caches\transforms-3\96b6bf10c97c757e488601c31a1fdd3c\transformed\accompanist-systemuicontroller-0.16.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\Jey\.gradle\caches\transforms-3\1ef4c52bbb19600d720790513fff362b\transformed\room-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] C:\Users\Jey\.gradle\caches\transforms-3\e189cd0331ed11d14bf059f8c3cacd1d\transformed\hilt-navigation-compose-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-compose:2.5.0] C:\Users\Jey\.gradle\caches\transforms-3\db6839bba5983f17e941ab6675068473\transformed\navigation-compose-2.5.0\AndroidManifest.xml:17:1-24:12
@@ -145,6 +146,8 @@ uses-sdk
 INJECTED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Jey\Documents\GitHub\RegistroPrestamos\app\src\main\AndroidManifest.xml
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.16.0] C:\Users\Jey\.gradle\caches\transforms-3\96b6bf10c97c757e488601c31a1fdd3c\transformed\accompanist-systemuicontroller-0.16.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.16.0] C:\Users\Jey\.gradle\caches\transforms-3\96b6bf10c97c757e488601c31a1fdd3c\transformed\accompanist-systemuicontroller-0.16.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\Jey\.gradle\caches\transforms-3\1ef4c52bbb19600d720790513fff362b\transformed\room-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-ktx:2.4.2] C:\Users\Jey\.gradle\caches\transforms-3\1ef4c52bbb19600d720790513fff362b\transformed\room-ktx-2.4.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.hilt:hilt-navigation-compose:1.0.0] C:\Users\Jey\.gradle\caches\transforms-3\e189cd0331ed11d14bf059f8c3cacd1d\transformed\hilt-navigation-compose-1.0.0\AndroidManifest.xml:20:5-22:41

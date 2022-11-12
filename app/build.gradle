@@ -73,6 +73,7 @@ dependencies {
     //room
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.16.0"
 
     // To use Coroutine features, you must add `ktx` artifact from Room as a dependency
     implementation "androidx.room:room-ktx:$room_version"
